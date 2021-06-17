@@ -26,10 +26,10 @@ export default function Header() {
             onClick={toggleDrawer(true)}>
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" color="inherit">
+          {/* <Typography variant="h6" color="inherit">
             News
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">Login</Button> */}
         </Toolbar>
       </AppBar>
       <HeaderDrawer drawerOpened={drawerOpened} toggleDrawer={toggleDrawer} />
