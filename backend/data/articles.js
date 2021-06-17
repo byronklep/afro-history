@@ -1,4 +1,4 @@
-const entries = [
+const articles = [
   {
     titleA: 'This is a TItle - A',
     descriptionA:
@@ -67,4 +67,4 @@ const entries = [
   },
 ]
 
-export default entries
+export default articles

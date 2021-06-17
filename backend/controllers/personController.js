@@ -41,7 +41,7 @@ const getPersonById = asyncHandler(async (req, res) => {
 // @desc    Delete a person
 // @route   DELETE /api/people/:id
 // @access  Public
-const deleteProduct = asyncHandler(async (req, res) => {
+const deletePerson = asyncHandler(async (req, res) => {
   const person = await Person.findById(req.params.id)
 
   if (person) {
@@ -69,7 +69,7 @@ const createPerson = asyncHandler(async (req, res) => {
 // @desc    Update a person
 // @route   PUT /api/people/:id
 // @access  Public
-const updateProduct = asyncHandler(async (req, res) => {
+const updatePerson = asyncHandler(async (req, res) => {
   const { name, description } = req.body
 
   const person = await Person.findById(req.params.id)
@@ -98,8 +98,8 @@ const getTopPeople = asyncHandler(async (req, res) => {
 export {
   getPeople,
   getPersonById,
-  deleteProduct,
+  deletePerson,
   createPerson,
-  updateProduct,
+  updatePerson,
   getTopPeople,
 }
