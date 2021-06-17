@@ -6,4 +6,15 @@
 
 .home-container {
   text-align: center;
+  color: #fff;
+}
+
+.heroBanner {
+  min-height: 100vh;
+  width: 100% !important;
+  position: relative;
+  padding-bottom: 180px;
+}
+.heroBanner img {
+  filter: brightness(40%);
 }
